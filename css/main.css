@@ -23,12 +23,6 @@
   width: 1px;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .project, .portfolio, .team, .clients__logo, .clients, .benefits__list, .about__list, .nav__list, .logo-header, .contacts, .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +319,19 @@ address {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  -webkit-transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   -webkit-transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
