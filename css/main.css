@@ -677,8 +677,8 @@ address {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--titel-background-color);
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../bgImg.jpg);
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bgImg.jpg);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/bgImg.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/bgImg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
