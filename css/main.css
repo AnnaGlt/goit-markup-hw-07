@@ -140,6 +140,11 @@ address {
   fill: #FFFFFF;
 }
 
+.current {
+  background-color: var(--accent-color);
+  color: var(--primery-white-coloc);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
