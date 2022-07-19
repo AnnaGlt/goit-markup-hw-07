@@ -55,7 +55,7 @@ body {
   line-height: 1.5;
 }
 
-body .no-scroll {
+body.no-scroll {
   overflow: hidden;
 }
 
@@ -340,10 +340,9 @@ address {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  visibility: visible;
   pointer-events: initial;
-  -webkit-transition: visibility 500ms, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: visibility 500ms, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .backdrop.is-hidden .modal {
@@ -355,8 +354,8 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  -webkit-transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition: visibility, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: visibility, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .modal {

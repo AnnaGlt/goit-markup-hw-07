@@ -9,10 +9,9 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    visibility: visible;
     pointer-events: initial;
 
-    transition: visibility 500ms, opasity 250ms cubic-bezier(.17, .67, .83, .67);
+    transition: opasity 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .backdrop.is-hidden .modal {
@@ -24,7 +23,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    transition: opasity 250ms cubic-bezier(.17, .67, .83, .67);
+    transition: visibility, opasity 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .modal {
