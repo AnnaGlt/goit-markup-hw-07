@@ -4,22 +4,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    &__img:not(:last-child) {
-        margin-right: 10px;
-    }
+.social-list__img:not(:last-child) {
+    margin-right: 10px;
+}
 
-    &__img {
-        position: relative;
-    }
+.social-list__img {
+    position: relative;
+}
 
-    &__ico {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        transform: translate(-50%, -50%)
-    }
+.social-list__ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%)
 }
 
 .social-list__link {

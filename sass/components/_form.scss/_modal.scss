@@ -12,7 +12,7 @@
     visibility: visible;
     pointer-events: initial;
 
-    transition: opasity 250ms cubic-bezier(.17, .67, .83, .67);
+    transition: visibility 500ms, opasity 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .backdrop.is-hidden .modal {

@@ -105,9 +105,8 @@ address {
 }
 
 .button__secondary {
+  height: 38px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--title-text-coloc);
   font-weight: 500;
   line-height: 1.62;
@@ -115,6 +114,8 @@ address {
   cursor: pointer;
   background-color: var(--secondary-background-color);
   padding: 6px 22px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .button__secondary:hover, .button__secondary:focus {
   color: var(--primery-white-coloc);
@@ -143,6 +144,8 @@ address {
 .current {
   background-color: var(--accent-color);
   color: var(--primery-white-coloc);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container {
@@ -153,9 +156,10 @@ address {
   margin-right: auto;
 }
 
-.team-conteiner {
-  padding: 94px 0;
-  background-color: var(--secondary-background-color);
+.hero__container {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .section__footer {
@@ -164,6 +168,16 @@ address {
   color: var(--primery-white-coloc);
   background-color: var(--titel-background-color);
   font-style: normal;
+}
+
+.section__team {
+  padding: 94px 0;
+  background-color: var(--secondary-background-color);
+}
+
+.portfolio__section {
+  padding-top: 100px;
+  padding-bottom: 94px;
 }
 
 .social-list {
@@ -177,12 +191,15 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .social-list__img:not(:last-child) {
   margin-right: 10px;
 }
+
 .social-list__img {
   position: relative;
 }
+
 .social-list__ico {
   position: absolute;
   top: 50%;
@@ -325,8 +342,8 @@ address {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  -webkit-transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition: visibility 500ms, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: visibility 500ms, opasity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .backdrop.is-hidden .modal {
@@ -690,6 +707,7 @@ address {
   max-width: 1600px;
   height: 600px;
 }
+
 .hero__title {
   max-width: 696px;
   height: 120px;
@@ -706,16 +724,11 @@ address {
   text-transform: uppercase;
 }
 
-.hero__container {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .header {
   background-color: var(--primery-white-coloc);
   border-bottom: 1px solid #ECECEC;
 }
+
 .header__container--position {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,6 +748,7 @@ address {
   color: var(--title-text-coloc);
   margin-bottom: 10px;
 }
+
 .team__pic {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -743,9 +757,11 @@ address {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
+
 .team__position {
   font-size: 16px;
   line-height: 1.19;
@@ -755,17 +771,13 @@ address {
   margin-bottom: 16px;
 }
 
-.portfolio__section {
-  padding-top: 100px;
-  padding-bottom: 94px;
-}
-
 .portfolio {
   margin-bottom: 56px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portfolio__item {
   margin-right: 8px;
 }
@@ -775,6 +787,7 @@ address {
       flex-wrap: wrap;
   margin: -15px;
 }
+
 .project__item {
   width: 370px;
   margin: 15px;
@@ -783,14 +796,17 @@ address {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .project__border {
   border: 1px solid #EEEEEE;
   border-top: 0;
   padding: 20px 24px;
 }
+
 .project__card {
   display: block;
 }
+
 .project__text {
   font-family: var(--main-font);
   font-size: 16px;
@@ -798,11 +814,13 @@ address {
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+
 .project__aside {
   position: relative;
   display: block;
   overflow: hidden;
 }
+
 .project__desc {
   position: absolute;
   top: 0;
@@ -822,6 +840,7 @@ address {
           transform: translatey(100%);
   overflow: hidden;
 }
+
 .project__title {
   margin-bottom: 4px;
   color: var(--title-text-coloc);
